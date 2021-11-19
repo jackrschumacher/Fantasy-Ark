@@ -1,20 +1,23 @@
+import 
+
 public class Player
 {
-	private const int MAX_INVENTORY_SIZE = 10;
-
 
 	//	--------------------------------------
 	//	Properties
 
 	private Item[] inventory;
 
+	private String name;
+
+	private int maxHP;
+	private int currentHP;
 	
 	//	--------------------------------------
 	//	Constructors
 
-	public Player()
+	public Player(String name)
 	{
-		
 	}
 
 
