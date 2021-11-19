@@ -8,12 +8,15 @@ public class EnemyPool
 	//	------------------------------------------------------
 	//	Constructors
 
-	public EnemyPool(int enemyCount, Enemy[] enemies)
+	public EnemyPool(Enemy[] enemies)
 	{
 		this.enemyCount = enemyCount;
 		this.enemies = enemies;
 	}
 
-	public 
+	public Enemy getEnemy()
+	{
+  	return enemies[]
+	}
 
 }
