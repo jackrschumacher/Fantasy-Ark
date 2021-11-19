@@ -18,6 +18,8 @@ public class Player
 	private int specialAttack;
   private int specialDefense;
   private int speed;
+
+	private BaseStats basestats;
   
 	//	--------------------------------------
 	//	Constructors

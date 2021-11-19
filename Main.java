@@ -15,7 +15,7 @@ class Main
     System.out.print("Please enter Name: ");
 		player.setName(in.nextLine());
 
-		//	Cl
+		//	Class
 
   }
 }
