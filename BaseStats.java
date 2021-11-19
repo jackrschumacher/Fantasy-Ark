@@ -25,8 +25,11 @@ public class BaseStats
 	{
 		player.setAttack(baseAttack);
     player.setHealth(baseHealth);
-    player.setDefense(baseDefense)
-    player.setSpecialAttack(baseSpecial)
+    player.setDefense(baseDefense);
+    player.setSpecialDefense(baseSpecialDefense);
+    player.setSpecialAttack(baseSpecialAttack);
+    player.setSpeed(baseSpeed);
+    player.setMana(baseMana);
 	}
 
 }

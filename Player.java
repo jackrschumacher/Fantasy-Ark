@@ -60,4 +60,22 @@ public class Player
 		defense = baseDefense;
 	}
 
+	public void setSpecialDefense(int baseSpecialDefense)
+	{
+		defense = baseSpecialDefense;
+	}
+
+	public void setSpecialAttack(int baseSpecialAttack)
+	{
+		defense = baseSpecialAttack;
+	}
+	
+	public void setSpeed(int baseSpeed)
+	{
+		defense = baseSpeed;
+	}
+	public void setMana(int baseDefense)
+	{
+		defense = baseDefense;
+	}
 }
