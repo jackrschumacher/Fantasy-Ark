@@ -83,13 +83,49 @@ public class Player
 
 	public int getCurrentHealth()
 	{
-		return currentHealth;
+		return currentHP;
 	}
 
 	public int getMaxHealth()
 	{
-		return MaxHealth;
+		return maxHP;
 	}
+
+	public int getAttack()
+	{
+		return attack;
+	}
+
+	public int getDefense()
+	{
+		return defense;
+	}
+
+	public int getSpecialAttack()
+	{
+		return specialAttack;
+	}
+
+	public int getSpecialDefense()
+	{
+		return specialDefense;
+	}
+
+	public int getSpeed()
+	{
+		return speed;
+	}
+
+	public int getMaxMana()
+	{
+		return maxMana;
+	}
+
+	public int getCurrentMana()
+	{
+		return currentSpeed;
+	}
+
 
 
 }
