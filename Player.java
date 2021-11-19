@@ -27,7 +27,6 @@ public class Player
 	public Player()
 	{}
 
-
 	//	--------------------------------------
 	//	Methods
 

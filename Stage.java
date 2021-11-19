@@ -1,13 +1,19 @@
 public class Stage
 {
   private String name;
-  private Battles[] battles;
+  private Battle[] battles;
 	private EnemyPool pool;
 
-  public Stage(String name, Battles[] battles, EnemyPool pool)
+  public Stage(String name, int numBattles, EnemyPool pool, Player player)
   {
-    this.battles = battles;
-    this.pool = pool;
-    
+    this.name = name;
+		this.pool = pool;
+		battles = new Battle[numBattles];
+
+		for (int i = 0; i < numBattles; i++)
+		{
+			battles[i] = new Battle(pool.getEnemy(), player);
+		}
+		
   }
 }
