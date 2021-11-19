@@ -41,4 +41,6 @@ public class Player
 		this.baseStats = baseStats;
 	}
 
+	public void getClass() {return baseStats;}
+
 }

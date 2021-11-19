@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.HashMap;
 
 class Main
 {
@@ -7,9 +8,11 @@ class Main
 		//	Useful things
 		Scanner in = new Scanner(System.in);
 		Player player = new Player();
-		BaseStats Classes = [
-			new BaseStats("Swordsman", 4, 4, )
-		];
+		
+		//	Classes of Charachters
+		HashMap<String,BaseStats> Classes = new HashMap(2);
+		Classes.put("Swordsman", new BaseStats(14, 4, 3, 3, 2, 3, 1));
+		Classes.put("Marzahl", new BaseStats(10, 10, 10, 10, 10, 10, 10));
 
 		//	Title
     System.out.println("-----Fantasy Ark-----");
@@ -19,6 +22,9 @@ class Main
 		player.setName(in.nextLine());
 
 		//	Class
-
+		System.out.println("Please enter Class");
+		System.out.println("(Swordsman)");
+		player.setBaseStats(Classes.get(in.nextLine()));
+		System.out.println(player.getClass());
   }
 }
