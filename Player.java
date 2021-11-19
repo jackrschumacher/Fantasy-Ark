@@ -12,7 +12,8 @@ public class Player
 
 	private int maxHP;
 	private int currentHP;
-	private int mana;
+	private int maxMana;
+	private int currentMana;
 	private int attack;
 	private int defense;
 	private int specialAttack;
@@ -62,20 +63,33 @@ public class Player
 
 	public void setSpecialDefense(int baseSpecialDefense)
 	{
-		defense = baseSpecialDefense;
+		specialDefense = baseSpecialDefense;
 	}
 
 	public void setSpecialAttack(int baseSpecialAttack)
 	{
-		defense = baseSpecialAttack;
+		specialAttack = baseSpecialAttack;
 	}
 	
 	public void setSpeed(int baseSpeed)
 	{
-		defense = baseSpeed;
+		speed = baseSpeed;
 	}
-	public void setMana(int baseDefense)
+	public void setMana(int baseMana)
 	{
-		defense = baseDefense;
+		maxMana = baseMana;
+		currentMana = baseMana;
 	}
+
+	public int getCurrentHealth()
+	{
+		return currentHealth;
+	}
+
+	public int getMaxHealth()
+	{
+		return MaxHealth;
+	}
+
+
 }

@@ -21,7 +21,7 @@ public class BaseStats
 		this.baseMana = baseMana;
 	}
 
-	public setStats(Player player)
+	public void setStats(Player player)
 	{
 		player.setAttack(baseAttack);
     player.setHealth(baseHealth);
