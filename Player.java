@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class Player
 {
-
 	//	--------------------------------------
 	//	Properties
 
@@ -125,7 +124,5 @@ public class Player
 	{
 		return currentMana;
 	}
-
-
 
 }
