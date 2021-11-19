@@ -8,7 +8,7 @@ class Main
 		Scanner in = new Scanner(System.in);
 		Player player = new Player();
 		BaseStats Classes = [
-			new BaseStats()
+			new BaseStats("Swordsman", 4, 4, )
 		];
 
 		//	Title
