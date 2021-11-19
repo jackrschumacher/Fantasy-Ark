@@ -21,5 +21,12 @@ public class BaseStats
 		this.baseMana = baseMana;
 	}
 
-	
+	public setStats(Player player)
+	{
+		player.setAttack(baseAttack);
+    player.setHealth(baseHealth);
+    player.setDefense(baseDefense)
+    player.setSpecialAttack(baseSpecial)
+	}
+
 }

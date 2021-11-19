@@ -39,8 +39,25 @@ public class Player
 	public void setBaseStats(BaseStats baseStats)
 	{
 		this.baseStats = baseStats;
+		baseStats.setStats(this);
 	}
 
-	public void getClass() {return baseStats;}
+	//	--------------------------------------
+	//	Getters & Setters
+	public void setHealth(int baseHealth)
+	{
+		maxHP = baseHealth;
+		currentHP = baseHealth;
+	}
+
+	public void setAttack(int baseAttack)
+	{
+		attack = baseAttack;
+	}
+
+	public void setDefense(int baseDefense)
+	{
+		defense = baseDefense;
+	}
 
 }

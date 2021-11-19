@@ -25,6 +25,5 @@ class Main
 		System.out.println("Please enter Class");
 		System.out.println("(Swordsman)");
 		player.setBaseStats(Classes.get(in.nextLine()));
-		System.out.println(player.getClass());
   }
 }
