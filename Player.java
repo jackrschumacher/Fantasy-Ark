@@ -123,7 +123,7 @@ public class Player
 
 	public int getCurrentMana()
 	{
-		return currentSpeed;
+		return currentMana;
 	}
 
 

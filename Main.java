@@ -15,7 +15,7 @@ class Main
 		Classes.put("Marzahl", new BaseStats(10, 10, 10, 10, 10, 10, 10));
 
 		//	Title
-    System.out.println("-----Fantasy Ark-----");
+    System.out.println("\nWelcome to \n-----Fantasy Ark-----");
 		
   	//	Name
     System.out.print("Please enter Name: ");
@@ -25,5 +25,10 @@ class Main
 		System.out.println("Please enter Class");
 		System.out.println("(Swordsman)");
 		player.setBaseStats(Classes.get(in.nextLine()));
+
+		
+
+
+
   }
 }
