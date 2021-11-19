@@ -1,4 +1,4 @@
-import 
+import java.util.ArrayList;
 
 public class Player
 {
@@ -6,23 +6,32 @@ public class Player
 	//	--------------------------------------
 	//	Properties
 
-	private Item[] inventory;
+	private ArrayList<Item> inventory;
 
 	private String name;
 
 	private int maxHP;
 	private int currentHP;
-	
+	private int mana;
+	private int attack;
+	private int defense;
+	private int specialAttack;
+  private int specialDefense;
+  private int speed;
+  
 	//	--------------------------------------
 	//	Constructors
 
-	public Player(String name)
-	{
-	}
+	public Player()
+	{}
 
 
 	//	--------------------------------------
 	//	Methods
 
+	public void setName(String name)
+	{
+		this.name = name;
+	}
 
 }
