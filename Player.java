@@ -19,7 +19,7 @@ public class Player
   private int specialDefense;
   private int speed;
 
-	private BaseStats basestats;
+	private BaseStats baseStats;
   
 	//	--------------------------------------
 	//	Constructors
@@ -34,6 +34,11 @@ public class Player
 	public void setName(String name)
 	{
 		this.name = name;
+	}
+
+	public void setBaseStats(BaseStats baseStats)
+	{
+		this.baseStats = baseStats;
 	}
 
 }

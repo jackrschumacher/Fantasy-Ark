@@ -1,7 +1,8 @@
-public class baseStats
+public class BaseStats
 {
 	//	--------------------------------------
 	//	Properties
+	private String name;
 
 	private int baseHealth;
 	private int baseAttack;
@@ -9,4 +10,12 @@ public class baseStats
 	private int baseSpecialAttack;
 	private int baseSepcialDefense;
 	private int baseSpeed;
+
+
+	public BaseStats()
+	{
+		
+	}
+
+	
 }

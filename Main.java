@@ -4,9 +4,12 @@ class Main
 {
   public static void main(String[] args)
 	{
-		//	
+		//	Useful things
 		Scanner in = new Scanner(System.in);
 		Player player = new Player();
+		BaseStats Classes = [
+			new BaseStats()
+		];
 
 		//	Title
     System.out.println("-----Fantasy Ark-----");
