@@ -26,7 +26,7 @@ class Main
 		System.out.println("(Swordsman)");
 		player.setBaseStats(Classes.get(in.nextLine()));
 
-		
+		// GAME!
 
 
 
