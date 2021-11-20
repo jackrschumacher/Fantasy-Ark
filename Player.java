@@ -124,4 +124,9 @@ public class Player
 		return currentMana;
 	}
 
+	public String getName()
+	{
+		return name;
+	}
+
 }
