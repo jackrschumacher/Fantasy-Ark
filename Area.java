@@ -12,5 +12,5 @@ public class Area
 	public Stage[] getStages()
 	{
 		return stages;
-	}  
+	}
 }

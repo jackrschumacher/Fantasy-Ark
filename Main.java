@@ -15,15 +15,18 @@ class Main
 		Classes.put("Marzahl", new BaseStats(10, 10, 10, 10, 10, 10, 10));
 
 		HashMap<String,Enemy> enemies = new HashMap<String,Enemy>(1);
-		enemies.put();
+		//	int HP, int attack, int defense, int specialAttack, int sepcialDefense, int speed, int mana, int gold, int XP
+		enemies.put("Slime", new Enemy(5, 1, 1, 1, 1, 1, 0, 0, 0));
 
 		HashMap<String,EnemyPool> pools = new HashMap<String,EnemyPool>(1);
-		pools.put("Plains Easy", new EnemyPool())
+		pools.put("Plains Easy", new EnemyPool([
+			enemies.get("Slime")
+			]));
 
 		ArrayList<Area> Areas = new ArrayList<Area>();
 		Areas.add(new Area("Plains", [
-			new Stage("Temp Name", 1, /**/, player)
-		]));
+			new Stage("Temp Name", 1, pools.get("Plains Easy"), player)
+			]));
 
 
 		//	Title
@@ -40,9 +43,9 @@ class Main
 		player.setBaseStats(classes.get(playerclass));
 
 		//	Intro
-		System.out.println("");
-		System.out.println("" + player.getName() + "" + playerclass + "");
-		System.out.println("" + player.getName() + "");
+		System.out.println("Vanum needs a hero to put a end to the darkness.");
+		System.out.println("This hero by the name of " + player.getName() + " is the world's best " + playerclass + ".");
+		System.out.println("Now go on your journey, " + player.getName() + ", to end the darnlness and save Vanum.");
 
 
 		// GAME!
@@ -52,7 +55,7 @@ class Main
 			{
 				for(Stage s : a.getStages())
 				{
-					
+					for(Battle b : s.getBattles())
 				}
 			}
 		}
