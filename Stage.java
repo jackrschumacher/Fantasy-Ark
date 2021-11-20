@@ -16,4 +16,9 @@ public class Stage
 		}
 		
   }
+
+	public Battle[] getBattles()
+	{
+		return battles;
+	}
 }
