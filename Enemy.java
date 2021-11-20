@@ -4,8 +4,7 @@ public class Enemy
 	//	Properties
 	private String name;
 
-	private int maxHP;
-	private int currentHP;
+	private int HP;
   private int gold;
   private int XP;
 	private int maxMana;
@@ -17,12 +16,11 @@ public class Enemy
   private int speed;
   
 	//	--------------------------------------
-	//	Constructors
+	//	Clone & Constructors
 
 	public Enemy(int HP, int attack, int defense, int specialAttack, int sepcialDefense, int speed, int mana, int gold, int XP)
 	{
-		this.maxHP = HP;
-		this.currentHP = HP;
+		this.HP = HP;
 		this.attack = attack;
 		this.defense = defense;
 		this.specialAttack = specialAttack;
@@ -35,13 +33,18 @@ public class Enemy
 
 	}
 
+	public Enemy clone()
+	{
+		return new Enemy(this.HP, this.attack, this.defense, this.specialAttack, this.sepcialDefense, this.speed, this.mana, this.gold, this.XP)
+	}
+
 
 	//	--------------------------------------
 	//	Methods
 
-	public void hurt(int damage)
+	public void takeDamage(int damage)
 	{
-		currentHP -=
+		HP -= damage;
 	}
 
 	//	--------------------------------------

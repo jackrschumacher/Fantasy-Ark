@@ -30,15 +30,15 @@ public class Player
 	//	--------------------------------------
 	//	Methods
 
-	public void setName(String name)
-	{
-		this.name = name;
-	}
-
 	public void setBaseStats(BaseStats baseStats)
 	{
 		this.baseStats = baseStats;
 		baseStats.setStats(this);
+	}
+
+	public void takeDamage(int damage)
+	{
+		HP -= damage;
 	}
 
 	//	--------------------------------------
@@ -122,6 +122,11 @@ public class Player
 	public int getCurrentMana()
 	{
 		return currentMana;
+	}
+
+	public void setName(String name)
+	{
+		this.name = name;
 	}
 
 	public String getName()

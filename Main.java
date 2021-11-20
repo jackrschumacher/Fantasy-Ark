@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.HashMap;
 import java.util.ArrayList;
 
-class Main
+public class Main
 {
 	private static Scanner in = new Scanner(System.in);
 
@@ -20,12 +20,12 @@ class Main
 		//	int HP, int attack, int defense, int specialAttack, int sepcialDefense, int speed, int mana, int gold, int XP
     // Individual Enemies
 		enemies.put("Slime", new Enemy(5, 1, 1, 1, 1, 1, 0, 0, 0));
-    enemies.put("Big Slime", new Enemy(10, 2, 3 ,2 ,3 ,2));
-    enemies.put("Giant Slime", new Enemy(20, 4, 4, 4, 4, 3));
-    enemies.put("Small Goblin", new Enemy(6, 2, 1, 2, 1, 2));
-    enemies.put("Goblin", new Enemy(12, 3, 2, 3, 2, 2)):
-    enemies.put("Goblin Warrior", new Enemy(18, 5, 3, 5, 3, 3)):
-    enemies.put("Glot", new Enemy(33, 7, 8, 7, 8, 5));
+    enemies.put("Big Slime", new Enemy(10, 2, 3 ,2 ,3 ,2, 0, 0, 0));
+    enemies.put("Giant Slime", new Enemy(20, 4, 4, 4, 4, 3, 0, 0, 0));
+    enemies.put("Small Goblin", new Enemy(6, 2, 1, 2, 1, 2, 0, 0, 0));
+    enemies.put("Goblin", new Enemy(12, 3, 2, 3, 2, 2, 0, 0, 0));
+    enemies.put("Goblin Warrior", new Enemy(18, 5, 3, 5, 3, 3, 0, 0, 0));
+    enemies.put("Glot", new Enemy(33, 7, 8, 7, 8, 5, 0, 0, 0));
     
 
 		HashMap<String,EnemyPool> pools = new HashMap<String,EnemyPool>(1);
@@ -43,13 +43,13 @@ class Main
 		
   	//	Name
     System.out.print("Please enter Name: ");
-		player.setName(in.nextLine());
+		player.setName(getInput());
 
 		//	Class
 		System.out.println("Please enter Class");
 		System.out.println("(Swordsman)");
 		
-		String playerclass = in.nextLine();
+		String playerclass = getInput();
 		player.setBaseStats(classes.get(playerclass));
 
 		//	Intro
@@ -76,6 +76,6 @@ class Main
 
 	public static String getInput()
 	{
-		return in.nextLine();
+		return getInput();
 	}
 }

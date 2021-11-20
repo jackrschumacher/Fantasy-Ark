@@ -14,7 +14,7 @@ public class EnemyPool
 
 	public Enemy getEnemy()
 	{
-  	return enemies[(int) (Math.random() * enemies.length)];
+  	return enemies[(int) (Math.random() * enemies.length)].clone();
 	}
 
 }

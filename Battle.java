@@ -21,9 +21,14 @@ public class Battle
 
 			if(playerTime >= 100)
 			{
-				enemy.
+				System.out.println("What would you like ");
+				Main.getInput();
 			}
 
+			if(enemyTime >= 100 && enemy.getCurrentHP() > 0)
+			{
+				player.hurt(enemy.getAttack());
+			}
 
 		}
 	}
