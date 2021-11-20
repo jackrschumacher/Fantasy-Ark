@@ -16,7 +16,15 @@ public class Battle
 
 		while(enemy.getCurrentHP() > 0 && player.getCurrentHealth() > 0)
 		{
-			playerTime += player.getSpeed()
+			playerTime += player.getSpeed();
+			enemyTime += enemy.getSpeed();
+
+			if(playerTime >= 100)
+			{
+				enemy.
+			}
+
+
 		}
 	}
 }

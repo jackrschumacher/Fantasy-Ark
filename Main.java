@@ -18,11 +18,15 @@ class Main
 
 		HashMap<String,Enemy> enemies = new HashMap<String,Enemy>(1);
 		//	int HP, int attack, int defense, int specialAttack, int sepcialDefense, int speed, int mana, int gold, int XP
+    // Individual Enemies
 		enemies.put("Slime", new Enemy(5, 1, 1, 1, 1, 1, 0, 0, 0));
     enemies.put("Big Slime", new Enemy(10, 2, 3 ,2 ,3 ,2));
     enemies.put("Giant Slime", new Enemy(20, 4, 4, 4, 4, 3));
     enemies.put("Small Goblin", new Enemy(6, 2, 1, 2, 1, 2));
-    enemies.put()
+    enemies.put("Goblin", new Enemy(12, 3, 2, 3, 2, 2)):
+    enemies.put("Goblin Warrior", new Enemy(18, 5, 3, 5, 3, 3)):
+    enemies.put("Glot", new Enemy(33, 7, 8, 7, 8, 5));
+    
 
 		HashMap<String,EnemyPool> pools = new HashMap<String,EnemyPool>(1);
 		pools.put("Plains Easy", new EnemyPool(

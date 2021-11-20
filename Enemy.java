@@ -39,13 +39,19 @@ public class Enemy
 	//	--------------------------------------
 	//	Methods
 
+	public void hurt(int damage)
+	{
+		currentHP -=
+	}
+
+	//	--------------------------------------
+	//	Getters & Setters
+	
 	public void setName(String name)
 	{
 		this.name = name;
 	}
 
-	//	--------------------------------------
-	//	Getters & Setters
 	public void setHP(int HP)
 	{
 		maxHP = HP;
